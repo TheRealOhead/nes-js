@@ -5,7 +5,7 @@ function Display(canvas) {
   this.ctx = canvas.getContext('2d');
 
   this.width = canvas.width = 256;
-  this.height = canvas.height = 240;
+  this.height = canvas.height = 256;
 
   this.data = this.ctx.createImageData(this.width, this.height);
   this.uint32 = new Uint32Array(this.data.data.buffer);
